@@ -1,10 +1,8 @@
-import _ from 'lodash';
+import { run } from "./app/app";
+import { AlertService } from "./app/alert.service";
+import { ComponentService } from "./app/component.service";
 
-  function component() {
-    let element = document.createElement('div');
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-    
-    return element;
-  }
+const alertService = new AlertService();
+const componentService = new ComponentService();
 
-  document.body.appendChild(component());
+run(alertService, componentService);
