@@ -1,5 +1,6 @@
 # Webpack-demo-project  
 run the following in terminal:  
 `npm install`  
-`npx webpack --config webpack.config.js`  
-Then you're good to go.
+use `npm start` to run in the development mode.  
+use `npm run build` to run in the production mode.  
+
